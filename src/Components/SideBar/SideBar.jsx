@@ -10,38 +10,38 @@ export default function SideBar() {
             </div>
             <div className="mt-8 text-2xl">
                 <ul>
-                    <li className="mb-2">
+                    <li className="mb-2 transition-all hover:bg-[#310f7a]">
                         <a href="#" className='flex py-4'> 
                             <AiOutlineHome className='mx-2'/>
                             صفحه اصلی
                         </a>
                     </li>
-                    <li className=" mb-2">
+                    <li className=" mb-2 transition-all hover:bg-[#310f7a]">
                         <a href="#" className='flex py-4'> 
                             <AiOutlineHome className='mx-2'/>
                             محصولات
                         </a>
                     </li>
-                    <li className=" mb-2">
+                    <li className=" mb-2 transition-all hover:bg-[#310f7a]">
                         <a href="#" className='flex py-4'> 
                             <AiOutlineHome className='mx-2'/>
                             کامند ها
                         </a>
                     </li>
-                    <li className=" mb-2">
-                        
+                    <li className=" mb-2 transition-all hover:bg-[#310f7a]">
+
                         <a href="#" className='flex py-4'> 
                             <AiOutlineHome className='mx-2'/>
                             کاربران
                         </a>
                     </li>
-                    <li className=" mb-2">
+                    <li className=" mb-2 transition-all hover:bg-[#310f7a]">
                         <a href="#" className='flex py-4'> 
                             <AiOutlineHome className='mx-2'/>
                             سفارشات
                         </a>
                     </li>
-                    <li className=" mb-2">
+                    <li className=" mb-2 transition-all hover:bg-[#310f7a]">
                         <a href="#" className='flex py-4'> 
                             <AiOutlineHome className='mx-2'/>
                             تخفیف ها

@@ -17,3 +17,7 @@ html {
   direction: rtl;
 }
 
+.active {
+  @apply bg-[#310f7a];
+}
+

@@ -7,7 +7,12 @@ import "./App.css";
 function App() {
   return (
     <>
-      <SideBar />
+      <div className="w-full flex">
+        <SideBar />
+        <div className="main w-10/12 bg-white-50-color">
+          <NavBar />
+        </div>
+      </div>
     </>
   );
 }

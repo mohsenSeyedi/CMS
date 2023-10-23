@@ -7,10 +7,10 @@ import { HiOutlineShoppingBag } from 'react-icons/hi';
 
 export default function SideBar() {
   return (
-    <div className="side-bar w-72 text-white-color font-bold h-screen bg-blue-color">
+    <div className="side-bar w-2/12 text-white-color font-bold h-screen bg-blue-color">
         <div className='side-bar-container'>
             <div>
-                <h3 className="text-2xl px-2 py-4 border-b border-gray-500">به داشبورد خود خوش آمدید</h3>
+                <h3 className="text-xl px-2 py-4 border-b border-gray-500">به داشبورد خود خوش آمدید</h3>
             </div>
             <div className="mt-8 text-2xl">
                 <ul>

@@ -13,7 +13,7 @@ function App() {
     <>
       <div className="w-full flex">
         <SideBar />
-        <div className="main w-10/12 bg-white-50-color">
+        <div className="main w-10/12 px-14 bg-white-50-color">
           <NavBar />
           {elem}
         </div>

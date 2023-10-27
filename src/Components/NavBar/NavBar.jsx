@@ -4,7 +4,7 @@ import { AiOutlineBell } from 'react-icons/ai';
 
 export default function NavBar() {
   return (
-    <div className="header text-xl pt-4 w-full flex justify-between items-center px-8">
+    <div className="header text-xl pt-4 w-full flex justify-between items-center">
       <div className="flex items-center">
         <img className="w-16 h-16 pb-2 object-contain" src="./public/images/Avatar/msg317320486-21967_prev_ui.png" alt=""/>
         <div className="pr-1">

@@ -6,7 +6,7 @@ import Comments from "./Components/Comments/Comments";
 
 
 let routes = [
-
+    {path :"/" , element : ""},
     {path : "/users" , element: <Users></Users>},
     {path : "/orders" , element: <Orders></Orders>},
     {path : "/products" , element: <Products> </Products>},

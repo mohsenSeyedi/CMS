@@ -21,3 +21,6 @@ html {
   @apply bg-[#310f7a];
 }
 
+.btn {
+  @apply bg-blue-color py-2 px-4 rounded-xl text-white transition-all hover:opacity-90
+}

@@ -4,6 +4,7 @@ import { BsHandbag } from 'react-icons/bs';
 import { BiMessageAltDetail , BiDollar } from 'react-icons/bi';
 import { FiUsers } from 'react-icons/fi';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 export default function SideBar() {
   return (
@@ -15,41 +16,40 @@ export default function SideBar() {
             <div className="mt-8 text-2xl">
                 <ul>
                     <li className="mb-1 active transition-all hover:bg-[#310f7a]">
-                        <a href="#" className='flex py-4'> 
+                        <Link to={"./products"} className='flex py-4'>
                             <AiOutlineHome className='mx-2'/>
                             صفحه اصلی
-                        </a>
+                        </Link>
                     </li>
                     <li className="mb-1 transition-all hover:bg-[#310f7a]">
-                        <a href="#" className='flex py-4'> 
+                        <Link to={"./products"} className='flex py-4'>
                             <BsHandbag className='mx-2'/>
                             محصولات
-                        </a>
+                        </Link>
                     </li>
                     <li className="mb-1 transition-all hover:bg-[#310f7a]">
-                        <a href="#" className='flex py-4'> 
+                        <Link to={"./comments"}  className='flex py-4'>                      
                             <BiMessageAltDetail className='mx-2'/>
                             کامنت ها
-                        </a>
+                        </Link>
                     </li>
                     <li className="mb-1 transition-all hover:bg-[#310f7a]">
-
-                        <a href="#" className='flex py-4'> 
+                        <Link to={"./users"} className='flex py-4'>
                             <FiUsers className='mx-2'/>
                             کاربران
-                        </a>
+                        </Link>
                     </li>
                     <li className="mb-1 transition-all hover:bg-[#310f7a]">
-                        <a href="#" className='flex py-4'> 
+                        <Link to={"./orders"} className='flex py-4'> 
                             <HiOutlineShoppingBag className='mx-2'/>
                             سفارشات
-                        </a>
+                        </Link>
                     </li>
                     <li className="mb-1 transition-all hover:bg-[#310f7a]">
-                        <a href="#" className='flex py-4'> 
+                        <Link to={"./oofs"} className='flex py-4'>
                             <BiDollar className='mx-2'/>
                             تخفیف ها
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

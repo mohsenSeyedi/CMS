@@ -11,9 +11,9 @@ function App() {
    const elem = useRoutes(routes)
   return (
     <>
-      <div className="w-full flex">
+      <div className="w-full ">
         <SideBar />
-        <div className="main w-10/12 px-14 bg-white-50-color">
+        <div className="main w-10/12 px-14 bg-white-50-color relative right-64">
           <NavBar />
           {elem}
         </div>

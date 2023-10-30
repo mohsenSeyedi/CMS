@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ErrorBox from "../ErrorBox/ErrorBox";
 
 export default function ProductsTable() {
   const [products, setProducts] = useState([]);
@@ -21,7 +22,9 @@ export default function ProductsTable() {
         <th className="p-5">موجودی</th>
       </tr>
 
-      {products.map((product) => (
+      { 
+      products.length < 1 ? <ErrorBox msg={"هیج محصولی یافت نشد !"}/> :
+      products.map((product) => (
         <tr key={product.id} className="text-center flex justify-between pr-[15px] pl-[20px] border-b">
           <td className="p-5">
             <img
@@ -41,5 +44,6 @@ export default function ProductsTable() {
         </tr>
       ))}
     </table>
+    
   );
 }

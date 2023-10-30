@@ -13,7 +13,7 @@ function App() {
     <>
       <div className="w-full ">
         <SideBar />
-        <div className="main w-10/12 px-14 bg-white-50-color relative right-64">
+        <div className="main w-10/12 px-14 bg-white-50-color relative right-[16.5rem]">
           <NavBar />
           {elem}
         </div>

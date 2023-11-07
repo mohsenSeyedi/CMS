@@ -3,6 +3,7 @@ import ErrorBox from "../ErrorBox/ErrorBox";
 import swal from "sweetalert";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Swal from "sweetalert2";
 
 export default function ProductsTable() {
   const [products, setProducts] = useState([]);
@@ -12,8 +13,6 @@ export default function ProductsTable() {
     });
   }
   
-
-
   useEffect(() => {
     fetch("http://localhost:3000/api/products/")
       .then((res) => res.json())
@@ -77,7 +76,7 @@ export default function ProductsTable() {
                 <td className="p-5">{product.price} تومان</td>
                 <td className="p-5">{product.count}</td>
                 <td className="p-5">
-                  <button className="btn mr-1" onClick={() => showDetailsProduct(product.id)}>جزییات</button>
+                  <button className="btn mr-1">جزییات</button>
                   <button
                     onClick={() => removeProductFunc(product.id)}
                     className="btn mr-1"

@@ -2,7 +2,8 @@ import React from 'react'
 import ErrorBox from '../ErrorBox/ErrorBox'
 import { useEffect } from 'react'
 import { useState } from 'react'
-
+import Swal from "sweetalert2";
+import swal from 'sweetalert';
 export default function Comments() {
 
   const [comments , setComments] = useState([])
@@ -15,6 +16,28 @@ export default function Comments() {
       setComments(data)
     })
   },[])
+
+  const getShowDetailsComments = (commentMess) => {
+    swal({
+      title: commentMess,
+      buttons: "دیدم",
+    })
+  }
+
+  const removeCommentUser = async (commentId) => {
+    swal({
+      title: "آیا از حذف محصول مطمئن هستید ؟",
+      icon: "error",
+      buttons: ["خیر", "بله"],
+    }).then(async (res)  =>  {
+      if(res) {
+        const res = await fetch(`http://localhost:3000/api/comments/${commentId}` , {
+          method : "DELETE"
+        })
+        console.log(res);
+      }
+    })
+  }
   return (
     <div>
       <table className="products-table bg-white-color w-full px-12 py-10 rounded-2xl">
@@ -42,8 +65,9 @@ export default function Comments() {
                 <td className="p-5">{comment.date}</td>
                 <td className="p-5">{comment.isAccept ? "پاسخ داده شده" : "پاسخ داده"}</td>
                 <td className="p-5">
-                  <button className="btn mr-1">جزییات</button>
+                  <button className="btn mr-1" onClick={() => getShowDetailsComments(comment.body)}>جزییات</button>
                   <button
+                  onClick={() => removeCommentUser(comment.id)}
                     className="btn mr-1"
                   >
                     حذف

@@ -16,7 +16,6 @@ function AddNewProduct() {
 
   const createNewProduct = async (e) => {
     e.preventDefault()
-    alert("as")
     const newPorduct = {
       title: newPorductTitle,
       price: newPorductPrice,
@@ -104,7 +103,7 @@ function AddNewProduct() {
             <GrGallery className="absolute top-4 right-2" />
           </div>
           <div className="">
-            <button className="btn" onClick={AddNewProduct}>
+            <button className="btn" onClick={createNewProduct}>
               افزودن
             </button>
           </div>

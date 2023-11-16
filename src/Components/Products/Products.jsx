@@ -1,7 +1,7 @@
 import React, { useEffect,useState } from "react";
 import AddNewProduct from "../AddNewProduct/AddNewProduct";
 import ProductsTable from "../ProductTable/ProductTable";
-import ErrorBox from "../ErrorBox/ErrorBox";
+
 
 
 export default function Products() {
